@@ -16,30 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9PF-wf-e3w">
-                                <rect key="frame" x="20" y="59" width="390" height="400"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="8ZX-ET-ehB">
+                                <rect key="frame" x="20" y="75" width="390" height="807"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PF-wf-e3w">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="392"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfP-l3-RB1">
+                                        <rect key="frame" x="0.0" y="415" width="390" height="392"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="0i6-a0-IcZ"/>
-                                    <constraint firstAttribute="width" constant="390" id="Fl1-fO-9Zg"/>
+                                    <constraint firstItem="9PF-wf-e3w" firstAttribute="height" secondItem="jfP-l3-RB1" secondAttribute="height" id="7yw-34-a4m"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfP-l3-RB1">
-                                <rect key="frame" x="20" y="498" width="390" height="400"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="8pM-1T-Qx9"/>
-                                    <constraint firstAttribute="width" constant="390" id="APE-KM-3m3"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8ZX-ET-ehB" secondAttribute="bottom" constant="16" id="3WQ-PY-rZg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8ZX-ET-ehB" secondAttribute="trailing" constant="20" id="Nxq-2f-uiU"/>
+                            <constraint firstItem="8ZX-ET-ehB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="RwQ-eR-FcG"/>
+                            <constraint firstItem="8ZX-ET-ehB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="W2z-KX-cjl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213.48837209302326" y="-23.175965665236053"/>
+            <point key="canvasLocation" x="-4.1860465116279073" y="-12.231759656652361"/>
         </scene>
     </scenes>
     <resources>
